@@ -23,7 +23,7 @@ const projects = [
   },
   {
     title: "Portfolio Website",
-    url: "http://localhost:3001"
+    url: "https://junaith-portfolio.vercel.app/projects"
   }
 ];
 
