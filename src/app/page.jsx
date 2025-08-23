@@ -5,9 +5,10 @@ import HomeProfile from "@/components/Home/HomeProfile";
 
 export default function Home() {
   return (
-    <main className="flex w-[80vw] h-screen bg-[#0d1117]">
-      <HomeIntro />
-      <HomeProfile />
-    </main>
+   <main className="w-full block md:flex md:w-[80vw] h-full md:h-screen bg-[#0d1117]">
+  <HomeIntro />
+  <HomeProfile />
+</main>
+
   );
 }

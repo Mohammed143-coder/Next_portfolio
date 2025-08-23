@@ -4,14 +4,15 @@ import Typewriter from "../Typewriter";
 const HomeIntro = () => {
     const techStack = [
     "Next Js Developer",
-    "React JS Developer",
+    "React Js Developer",
     "Web App Specialist",
     "Frontend Developer",
+    "Full Stack Developer",
     "Quick Learner",
   ];
     return (
-         <section className=" w-2/5 flex flex-col items-start justify-center md:w-1/2 ml-0 md:ml-4">
-        <h3 className="absolute self-end -mt-24 p-2 bg-white/10 rounded-lg animate-bounce text-blue-400 border border-blue-500 duration-700 ease-in-out">
+         <section className="w-full flex flex-col items-start justify-center md:w-1/2 ml-0 md:ml-4 p-4 md:p-0 mt-12 md:mt-0">
+        <h3 className="absolute self-end md:-mt-24 p-2 bg-white/10 rounded-lg animate-bounce text-blue-400 border border-blue-500 duration-700 ease-in-out">
           Clean Code
         </h3>
         <div className="flex items-center mb-16 gap-2 bg-white/20 border border-gray-300 p-3 rounded-full text-sm text-white font-semibold my-4">
@@ -28,7 +29,7 @@ const HomeIntro = () => {
         <h2 className="text-4xl text-white font-medium my-3.5">
           I'm Mohammed Junaith
         </h2>
-        <h3 className="absolute self-center ml-5 mt-60 p-2 bg-white/10 rounded-lg animate-bounce text-yellow-400 border border-yellow-500 duration-700">
+        <h3 className="absolute self-center ml-5 mt-64 md:mt-60 p-2 bg-white/10 rounded-lg animate-bounce text-yellow-400 border border-yellow-500 duration-700">
           Scalable
         </h3>
 

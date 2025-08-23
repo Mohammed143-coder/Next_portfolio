@@ -2,14 +2,16 @@ import { TechStack } from "@/components/TechStack";
 
 const Skills = () => {
   return (
-    <section className="text-2xl h-screen w-[80vw] bg-[#0d1117] text-white flex flex-col items-center justify-center">
-      <p className="text-4xl my-8 ">
-        <span className="text-orange-400">Tour Of </span>
-        <span>My Technical </span>
-        <span className="text-teal-400"> Treasure</span>
-      </p>
-      <TechStack />
-    </section>
+   <section className="min-h-screen w-full md:w-[80%] bg-[#0d1117] text-white flex flex-col items-center justify-center px-4 ">
+  <p className="text-3xl md:text-4xl lg:text-5xl font-semibold my-2 text-center leading-snug mt-16">
+  <span className=" text-orange-400">Tour Of </span>
+  <span className="">My Technical </span>
+  <span className="block md:inline text-teal-400">Treasure</span>
+</p>
+
+  <TechStack />
+</section>
+
   );
 };
 

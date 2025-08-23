@@ -18,7 +18,7 @@ import { GiBugleCall } from "react-icons/gi";
 import { FaGithub, FaJava } from "react-icons/fa6";
 
 export const TechStack = () => {
-    const skills = {
+  const skills = {
     "Frontend Development": [
       { name: "React", icon: <FaReact className="text-sky-400" /> },
       { name: "Next.js", icon: <SiNextdotjs className="text-white" /> },
@@ -39,9 +39,12 @@ export const TechStack = () => {
       { name: "MongoDB", icon: <SiMongodb className="text-green-400" /> },
       { name: "REST APIs", icon: <TbApi className="text-yellow-400" /> },
     ],
-   
+
     "Tools & Technologies": [
-        {name:"Postman",icon:<SiPostman  className="text-orange-400 w-5 h-5"/>},
+      {
+        name: "Postman",
+        icon: <SiPostman className="text-orange-400 w-5 h-5" />,
+      },
       { name: "Git hub", icon: <FaGithub /> },
       { name: "Redux", icon: <SiRedux className="text-purple-500" /> },
       { name: "VS Code", icon: <VscVscode className="text-blue-400" /> },
@@ -72,40 +75,39 @@ export const TechStack = () => {
         icon: <FaReact className="text-sky-400" />,
       },
     ],
-     "UI/UX Design": [
+    "UI/UX Design": [
       { name: "Figma", icon: <FaFigma className="text-pink-500" /> },
       {
         name: "Responsive Design",
         icon: <MdDesignServices className="text-purple-400" />,
       },
-    ],};
-    return (
-        <div className="my-2 grid grid-cols-1 md:grid-cols-3 gap-6 p-4">
-        {skills &&
-          Object.entries(skills).map(([category, items]) => (
-            <div
-              key={category}
-              className="relative group overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-md shadow-lg hover:scale-105 transition-all duration-300"
-            >
-              {/* Light reflection effect */}
-              <div className="absolute inset-0 before:absolute before:w-[150%] before:h-[200%] before:bg-gradient-to-r before:from-transparent before:via-white/20 before:to-transparent before:rotate-12 before:translate-x-[-100%] group-hover:before:translate-x-[100%] before:transition-transform before:duration-1000 before:content-['']"></div>
+    ],
+  };
+  return (
+    <div className="my-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4 w-full">
+      {skills &&
+        Object.entries(skills).map(([category, items]) => (
+          <div
+            key={category}
+            className="relative group overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-4 md:p-6 backdrop-blur-md shadow-lg hover:scale-105 transition-all duration-300"
+          >
+            {/* Light reflection effect */}
+            <div className="absolute inset-0 before:absolute before:w-[150%] before:h-[200%] before:bg-gradient-to-r before:from-transparent before:via-white/20 before:to-transparent before:rotate-12 before:translate-x-[-100%] group-hover:before:translate-x-[100%] before:transition-transform before:duration-1000 before:content-['']"></div>
 
-              <h2 className="text-xl font-bold mb-4">{category}</h2>
-              <ul className="flex flex-wrap gap-3">
-                {items.map((item, index) => (
-                  <li
-                    key={index}
-                    className="flex items-center gap-2 rounded-lg border border-white/10 bg-white/10 px-3 py-2 text-base backdrop-blur-sm hover:bg-white/20 transition"
-                  >
-                    {item.icon}
-                    <span>{item.name}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-      </div>
-    );
-}
-
-
+            <h2 className="text-lg sm:text-xl font-bold mb-4">{category}</h2>
+            <ul className="flex flex-wrap gap-3">
+              {items.map((item, index) => (
+                <li
+                  key={index}
+                  className="flex items-center gap-2 rounded-lg border border-white/10 bg-white/10 p-2 text-sm sm:text-base backdrop-blur-sm hover:bg-white/20 transition"
+                >
+                  {item.icon}
+                  <span>{item.name}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+    </div>
+  );
+};

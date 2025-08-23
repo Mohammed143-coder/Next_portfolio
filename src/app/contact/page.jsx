@@ -5,11 +5,11 @@ import { SlLocationPin } from "react-icons/sl";
 
 const Contact = () => {
   return (
-    <main className="flex text-2xl w-[80vw] h-screen bg-[#0d1117] text-white ">
-      <section className="w-1/2 p-3 flex flex-col justify-center">
+    <main className="block md:flex text-2xl w-full md:w-[80vw] h-full md:h-screen bg-[#0d1117] text-white ">
+      <section className="w-full md:w-1/2 p-1 md:p-3 flex flex-col justify-center mt-12">
         <div className="ml-4">
           {" "}
-          <h1 className="text-5xl my-6 text-blue-400 font-semibold">
+          <h1 className="text-4xl md:text-5xl my-6 text-blue-400 font-semibold">
             Get In to touch
           </h1>
           <p className="text-lg my-4 font-medium">
@@ -26,7 +26,7 @@ const Contact = () => {
           </p>
         </div>
       </section>
-      <section className="w-1/2 p-3">
+      <section className="w-full md:w-1/2 p-1 md:p-3">
         <ContactForm />
       </section>
     </main>

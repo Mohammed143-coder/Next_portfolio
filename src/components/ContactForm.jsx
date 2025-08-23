@@ -35,7 +35,7 @@ const ContactForm = () => {
     }
   };
   return (
-    <div className="mt-12 mx-4 p-6 bg-[#0d1117]  text-gray-200 rounded-xl border">
+    <div className="mt-8 md:mt-12 mx-4 p-6 bg-[#0d1117]  text-gray-200 rounded-xl border">
       <h2 className="text-2xl font-bold mb-4 text-center ">
         🚀 Let’s Connect!
       </h2>

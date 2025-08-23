@@ -4,7 +4,7 @@ const HomeProfile = () => {
   const profile= {
     name: "Mohammed Junaith",
     title:
-      "React & Next Js Developer | Web Developer| Frontend Developer |Java DSA Practitioner",
+      "React & Next Js Developer| Web Developer| Frontend Developer| Full Stack Developer| Java DSA Practitioner",
     skills: [
       "Next Js",
       "React JS",
@@ -14,10 +14,12 @@ const HomeProfile = () => {
       "Mongo DB",
       "Java",
       "JavaScript",
-      "Git",
       "HTML",
-      "DSA Leaner",
       "Tailwind CSS",
+      "DSA Leaner",
+      "Postman",
+      "Git",
+      
     ],
     hardWorker: true,
     quickLearner: true,
@@ -33,13 +35,13 @@ const HomeProfile = () => {
     },
   };
   return (
-   <setion className="w-3/5 flex min-h-screen items-center justify-center p-6">
+   <setion className="w-full md:w-3/5 flex min-h-screen items-center justify-center p-6">
         {/* Outer Gradient Border */}
         <div className="relative rounded-xl p-[2px] bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 shadow-xl">
           {/* Inner Code Box */}
 
-          <div className="bg-[#0d1117] text-gray-200 font-mono rounded-xl p-6 w-full">
-            <div className="flex items-start justify-start h-18 gap-2">
+          <div className="bg-[#0d1117] text-gray-200 font-mono rounded-xl p-4 md:p-6 w-full">
+            <div className="flex items-start justify-start h-10 md:h-18 gap-2">
               <div className="rounded-full w-4 h-4 bg-red-400"></div>
               <div className="rounded-full w-4 h-4 bg-yellow-400"></div>
               <div className="rounded-full w-4 h-4 bg-green-400"></div>

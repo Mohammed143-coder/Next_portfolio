@@ -31,7 +31,7 @@ const AsideBar = () => {
   ];
 
   return (
-    <aside className="w-[20vw] bg-black text-white">
+    <aside className="w-[20vw] bg-black text-white hidden md:block">
       <div className="mt-5 flex flex-col items-center gap-4">
         <div className="w-40 h-40 rounded-full border-2 ">
             <Image src='/MJ.jpeg' alt='Mohammed Junaith' width={80} height={20}  className="rounded-full w-39 h-39 object-cover"/>

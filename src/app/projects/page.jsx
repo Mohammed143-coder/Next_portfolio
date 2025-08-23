@@ -29,11 +29,11 @@ const projects = [
 
 export default function Projects() {
   return (
-    <div className="py-10 w-[80vw] h-screen bg-[#0d1117] text-white">
-      <h1 className="text-3xl  font-semibold mb-6 text-center">
+    <div className="p-6 md:py-10 w-full md:w-[80vw] h-full md:h-screen bg-[#0d1117] text-white">
+      <h1 className="text-3xl font-semibold mb-6 text-center mt-10">
         <span className="text-orange-400">My </span><span className="">Portfolio </span><span className="text-emerald-500">Journey</span>
       </h1>
-      <h5 className="text-gray-500 mx-12 font-medium my-4 text-center">Showcasing real-world projects as a Frontend, React.js & Next.js Web Developer from Tamil Nadu, India — building fast, scalable, and SEO-friendly websites.</h5>
+      <h5 className="text-gray-300 md:text-gray-500 mx-12 font-medium my-4 text-center">Showcasing real-world projects as a Frontend, React.js & Next.js Web Developer from Tamil Nadu, India — building fast, scalable, and SEO-friendly websites.</h5>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((project, index) => (
           <Link key={index} href={project.url} target="_blank">
