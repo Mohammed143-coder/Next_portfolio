@@ -1,4 +1,4 @@
-import React from "react";
+"use client"
 import Link from "next/link";
 import { FaCode, FaGithub, FaLinkedin } from "react-icons/fa6";
 import { IoHomeOutline } from "react-icons/io5";
@@ -14,7 +14,7 @@ const AsideBar = () => {
   const asideList = [
     { name: "Home", icon: <IoHomeOutline />, link: "/" },
     { name: "Skills", icon: <FaCode />, link: "/skills" },
-    
+
     { name: "Experience", icon: <MdOutlineWorkHistory />, link: "/experience" },
     // {
     //   name: "Education",
@@ -25,7 +25,10 @@ const AsideBar = () => {
     { name: "Contact", icon: <RiContactsBook2Line />, link: "/contact" },
   ];
   const socialIcons = [
-    { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/mohammed-junaith-software-developer" },
+    {
+      icon: <FaLinkedin />,
+      link: "https://www.linkedin.com/in/mohammed-junaith-software-developer",
+    },
     { icon: <FaGithub />, link: "https://github.com/Mohammed143-coder" },
     { icon: <RiMailSendLine />, link: "mailto:junaithdedhai2001@gmail.com" },
   ];
@@ -33,8 +36,21 @@ const AsideBar = () => {
   return (
     <aside className="w-[20vw] bg-black text-white hidden md:block">
       <div className="mt-5 flex flex-col items-center gap-4">
-        <div className="w-40 h-40 rounded-full border-2 ">
-            <Image src='/MJ.jpeg' alt='Mohammed Junaith' width={80} height={20}  className="rounded-full w-39 h-39 object-cover"/>
+        <div
+          className="w-40 h-40 rounded-full border-2 "
+          onContextMenu={(e) => e.preventDefault()}
+          onDragStart={(e) => e.preventDefault()}
+          onMouseDown={(e) => e.preventDefault()}
+        >
+          <Image
+            src="/MJ.jpeg"
+            alt="Mohammed Junaith"
+            width={80}
+            height={20}
+            className="rounded-full w-39 h-39 object-cover pointer-events-none"
+          />
+          {/* this line help us to prevent from touches and click for the particular div and around the div at some distance */}
+          {/* <div className="absolute inset-0" aria-hidden /> */}
         </div>
         <div className="flex justify-center my-2 gap-4 w-full">
           {socialIcons.map((item, index) => (
@@ -58,7 +74,9 @@ const AsideBar = () => {
               className="bg-black flex items-center gap-3 p-3 transition-colors group text-xl rounded-lg"
             >
               <p className="group-hover:text-blue-400">{item.icon}</p>
-              <p className="text-gray-400 group-hover:text-white">{item.name}</p>
+              <p className="text-gray-400 group-hover:text-white">
+                {item.name}
+              </p>
             </Link>
           </li>
         ))}

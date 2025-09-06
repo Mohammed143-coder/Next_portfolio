@@ -24,14 +24,22 @@ const HomeIntro = () => {
         ></div>
         <span>Welcome To My Universe</span>
       </div>
-      <div className="w-40 h-40 rounded-full border-2 md:hidden m-auto">
+      <div className="w-40 h-40 rounded-full border-2 md:hidden m-auto"
+      onContextMenu={(e) => e.preventDefault()}
+    onDragStart={(e) => e.preventDefault()}
+      onMouseDown={(e) => e.preventDefault()}
+      >
         <Image
           src="/MJ.jpeg"
           alt="Mohammed Junaith"
           width={80}
           height={20}
-          className="rounded-full w-39 h-39 object-cover"
+          priority
+           draggable={false}
+          className="rounded-full w-39 h-39 object-cover pointer-events-none"
+
         />
+        {/* <div className="absolute inset-0" aria-hidden /> */}
       </div>
       <h3 className="absolute md:self-center md:ml-6 md:-mt-28 p-2 bg-white/10 rounded-lg animate-bounce text-violet-400 border border-violet-500 duration-700 ease-in-out">
         Maintainable

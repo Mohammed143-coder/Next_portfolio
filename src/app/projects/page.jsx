@@ -35,7 +35,7 @@ const projects = [
 export default function Projects() {
   return (
     <div className="p-6 md:py-6 w-full md:w-[80vw] h-full md:h-screen bg-[#0d1117] text-white overflow-y-auto">
-      <h1 className="text-3xl md:text-4xl font-semibold mb-6 text-center mt-4">
+      <h1 className="text-3xl md:text-4xl font-semibold mb-6 text-center mt-12 md:mt-4">
         <span className="text-orange-400">My </span><span className="">Portfolio </span><span className="text-emerald-500">Journey</span>
       </h1>
       <h5 className="text-gray-300 md:text-gray-500 mx-12 font-medium my-4 text-center">Showcasing real-world projects as a Frontend, React.js & Next.js Web Developer from Tamil Nadu, India — building fast, scalable, and SEO-friendly websites.</h5>
