@@ -16,7 +16,7 @@ const HomeIntro = () => {
       <h3 className="absolute self-end md:-mt-24 p-2 bg-white/10 rounded-lg animate-bounce text-blue-400 border border-blue-500 duration-500 ease-in-out">
         Clean Code
       </h3>
-      
+
       <div className="flex items-center mb-16 gap-2 bg-white/20 border border-gray-300 p-3 rounded-full text-sm text-white font-semibold my-4">
         <div
           className="animate-pulse bg-emerald-500 w-2.5 h-2.5 rounded-full"
@@ -24,10 +24,11 @@ const HomeIntro = () => {
         ></div>
         <span>Welcome To My Universe</span>
       </div>
-      <div className="w-40 h-40 rounded-full border-2 md:hidden m-auto"
-      onContextMenu={(e) => e.preventDefault()}
-    onDragStart={(e) => e.preventDefault()}
-      onMouseDown={(e) => e.preventDefault()}
+      <div
+        className="w-40 h-40 rounded-full border-2 md:hidden m-auto"
+        onContextMenu={(e) => e.preventDefault()}
+        onDragStart={(e) => e.preventDefault()}
+        onMouseDown={(e) => e.preventDefault()}
       >
         <Image
           src="/MJ.jpeg"
@@ -35,9 +36,8 @@ const HomeIntro = () => {
           width={80}
           height={20}
           priority
-           draggable={false}
+          draggable={false}
           className="rounded-full w-39 h-39 object-cover pointer-events-none"
-
         />
         {/* <div className="absolute inset-0" aria-hidden /> */}
       </div>
